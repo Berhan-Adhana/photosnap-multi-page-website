@@ -12,7 +12,6 @@ export default {
         white: "#FFF",
         background: "#F2F2F2",
         bgcontainer: "#F5F5F5",
-        mainAccen: ["linear-gradient(#FFC593, #BC7198, #5A77FF)"],
       },
       boxShadow: {
         cardShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
