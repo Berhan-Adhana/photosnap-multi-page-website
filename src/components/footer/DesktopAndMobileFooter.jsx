@@ -12,7 +12,7 @@ const DesktopAndMobileFooter = ({ logo, socialMedia, menu }) => {
         <Logo logo={logo} />
         <SocialMedia socialMedia={socialMedia} />
       </div>
-      <div className="flex flex-col   text-white mt-[49px] lg:mt-0  gap-x-[13.33px] gap-y-5">
+      <div className="flex flex-col text-center text-white mt-[49px] lg:mt-0  gap-x-[13.33px] gap-y-5">
         {menu.map((item, index) => (
           <Link
             key={index}
