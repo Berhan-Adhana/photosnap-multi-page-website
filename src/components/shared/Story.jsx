@@ -29,7 +29,9 @@ const Story = ({ story, isDateDisplay = false }) => {
         <p className="text-[13px] leading-[16.93px] text-left">{`by ${story.capturedBy}`}</p>
         {/* Line */}
         <div className="h-[2px] w-full bg-lightGrey " />
-        <Link className="btn btn-transparent-whiteArrow">READ STORY</Link>
+        <Link className="btn btn-transparent-whiteArrow">
+          READ STORY
+        </Link>
       </div>
       {/* Overlay */}
       <div className="absolute w-full h-full inset-0 bg-overlay " />

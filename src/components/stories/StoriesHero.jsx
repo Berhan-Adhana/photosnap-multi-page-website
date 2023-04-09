@@ -15,7 +15,7 @@ const StoriesHero = ({ heroData }) => {
             className="object-cover w-full h-[650px]"
           />
         )}
-        {(viewportWidth >= 768) && (viewportWidth < 1024) && (
+        {viewportWidth >= 768 && viewportWidth < 1024 && (
           <img
             src={heroData.imageTablet}
             alt=""
@@ -39,7 +39,9 @@ const StoriesHero = ({ heroData }) => {
           <span>by John Appleseed</span>
         </div>
         <p className="opacity-60 mix-blend-normal">{heroData.desc}</p>
-        <Link className="btn btn-transparent-whiteArrow">READ THE STORY</Link>
+        <Link className="btn btn-transparent-whiteArrow  w-[205px]">
+          READ THE STORY
+        </Link>
       </div>
     </div>
   );
