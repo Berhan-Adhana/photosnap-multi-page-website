@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-fontDmSans overflow-x-hidden text-[15px] leading-[25px] font-normal bg-background relative;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold text-black;
+  }
+  h1 {
+    @apply text-[32px] leading-[40px] tracking-[3.33px] md:text-[40px] md:leading-[48px] md:tracking-[4.17px];
+  }
+  h2 {
+    @apply text-[24px] leading-[25px];
+  }
+  h3 {
+    @apply text-[18px] leading-[25px];
+  }
+  h4 {
+    @apply text-[12px] leading-[15.6px] tracking-[2px];
+  }
+}
+
+@layer components {
+  .btn {
+    @apply uppercase cursor-pointer font-bold text-[12px] leading-[15.6px] tracking-[2px] transition-all duration-500;
+  }
+  .btn-transparent-blackArrow {
+    @apply text-black;
+  }
+  .btn-transparent-whiteArrow {
+    @apply text-white;
+  }
+
+  .btn-transparent-blackArrow,
+  .btn-transparent-whiteArrow {
+    @apply bg-transparent relative hover:underline inline-block;
+  }
+  .btn-transparent-blackArrow::after {
+    content: url("./assets/shared/desktop/arrow.svg");
+  }
+  .btn-transparent-whiteArrow::after {
+    content: url("./assets/shared/desktop/arrow_light.svg");
+  }
+
+  .btn-transparent-blackArrow::after,
+  .btn-transparent-whiteArrow::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .btn-black {
+    @apply bg-black px-4 py-2 text-white hover:bg-lightGrey hover:text-black;
+  }
+
+  .app-container {
+    @apply px-4 w-full md:px-[40px] lg:px-[70px]  xl:px-[165px];
+  }
+}
