@@ -15,6 +15,8 @@ export default {
       },
       boxShadow: {
         cardShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+        planShadow:
+          "2px 2px 4px #FFC593,-2px -2px 4px #BC7198, 0 0 6px #5A77FF",
       },
       backgroundImage: {
         mainAccent: ["linear-gradient(#FFC593, #BC7198, #5A77FF)"],
