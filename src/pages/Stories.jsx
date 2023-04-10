@@ -15,13 +15,11 @@ const storiesHeroDta = {
   desc: "The dissected plateau area, while not actually made up of geological 'mountains', is popularly called mountains, especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.",
   tag: "LAST MONTH’S FEATURED STORY",
 };
-const Stories = () => {
-  return (
-    <div>
-      <StoriesHero heroData={storiesHeroDta} />
-      <StoriesGrid stories={stories} isDateDisplay={true} />
-    </div>
-  );
-};
+const Stories = () => (
+  <>
+    <StoriesHero heroData={storiesHeroDta} />
+    <StoriesGrid stories={stories} isDateDisplay={true} />
+  </>
+);
 
 export default Stories;
