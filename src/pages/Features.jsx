@@ -1,4 +1,3 @@
-import React from "react";
 import { features } from "../data";
 import FeaturesGrid from "../components/home/FeaturesGrid";
 import SnapCard from "../components/shared/SnapCard";
@@ -16,14 +15,12 @@ const featuresData = {
   desc: "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
 };
 
-const Features = () => {
-  return (
-    <div>
-      <SnapCard data={featuresData} bgIsBlack={true} />
-      <FeaturesGrid features={features} />
-      <CTA />
-    </div>
-  );
-};
+const Features = () => (
+  <>
+    <SnapCard data={featuresData} bgIsBlack={true} />
+    <FeaturesGrid features={features} />
+    <CTA />
+  </>
+);
 
 export default Features;
