@@ -12,7 +12,7 @@ const Home = () => {
   const featuresData = features.filter((feature, index) => index < 3);
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       {homeData.map((data, index) => {
         return <SnapCard key={index} data={data} index={index} />;
       })}

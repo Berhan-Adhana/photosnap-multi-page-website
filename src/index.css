@@ -30,53 +30,18 @@
     @apply text-[12px] leading-[15.6px] tracking-[2px];
   }
 
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     width: 8px;
-
   }
-  ::-webkit-scrollbar-track{
+  ::-webkit-scrollbar-track {
     @apply bg-black;
-  
   }
-  ::-webkit-scrollbar-thumb{
+  ::-webkit-scrollbar-thumb {
     @apply bg-mainAccent rounded-[9999px];
-
   }
 }
 
 @layer components {
-  .btn {
-    @apply uppercase cursor-pointer font-bold text-[12px] leading-[15.6px] tracking-[2px] transition-all duration-500;
-  }
-  .btn-transparent-blackArrow {
-    @apply text-black;
-  }
-  .btn-transparent-whiteArrow {
-    @apply text-white;
-  }
-
-  .btn-transparent-blackArrow,
-  .btn-transparent-whiteArrow {
-    @apply bg-transparent relative hover:underline inline-block;
-  }
-  .btn-transparent-blackArrow::after {
-    content: url("./assets/shared/desktop/arrow.svg");
-  }
-  .btn-transparent-whiteArrow::after {
-    content: url("./assets/shared/desktop/arrow_light.svg");
-  }
-
-  .btn-transparent-blackArrow::after,
-  .btn-transparent-whiteArrow::after {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .btn-black {
-    @apply bg-black px-4 py-2 text-white hover:bg-lightGrey hover:text-black;
-  }
-
   .app-container {
     @apply px-4 w-full md:px-[40px] lg:px-[70px]  xl:px-[165px];
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useViewportWidth from "../../hooks/useViewportWidth";
+import Button from "../common/Button";
 
 const SnapCard = ({ data, bgIsBlack = false, index = 0 }) => {
   const [viewportWidth] = useViewportWidth();
@@ -52,7 +53,7 @@ const SnapCard = ({ data, bgIsBlack = false, index = 0 }) => {
         >
           {data.desc}
         </p>
-        <Link
+        {/* <Link
           className={`${
             index === 0 || bgIsBlack
               ? "btn-transparent-whiteArrow w-[205px]"
@@ -60,7 +61,15 @@ const SnapCard = ({ data, bgIsBlack = false, index = 0 }) => {
           } btn`}
         >
           VIEW THE STORIES
-        </Link>
+        </Link> */}
+        <Button
+        transparent
+        blackArrow={!(index === 0 || bgIsBlack)}
+        whiteArrow={index === 0 || bgIsBlack}
+        // className="w-[205px]"
+        >
+          VIEW THE STORIES
+        </Button>
       </div>
     </article>
   );
